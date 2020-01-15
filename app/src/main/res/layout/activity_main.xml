@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/hb"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/black_coffe_counter"
+                android:layout_width="31dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button_black_coffe"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBlackCoffeClick"
+                android:textAllCaps="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:text="Black Coffe" />
+
+            <Button
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:onClick="onBlackCoffeResetClick"
+                android:text="Reset"
+                android:textAllCaps="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/milk_shake_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button_milkShake"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:onClick="onMilkShakeClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textAllCaps="true"
+                android:layout_weight="1"
+                android:text="milkShake" />
+
+            <Button
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:onClick="onMilkShakeResetClick"
+                android:text="Reset"
+                android:textAllCaps="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/green_tea_counter"
+                android:layout_width="10sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button_green_tea"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:onClick="onGreenTeaClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textAllCaps="true"
+                android:layout_weight="1"
+                android:text="Green tea" />
+
+            <Button
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:onClick="onGreenTeaResetClick"
+                android:text="Reset"
+                android:textAllCaps="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_checkout"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="match_parent"
+                android:onClick="onCheckOut"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textAllCaps="true"
+                android:layout_weight="1"
+                android:text="Check out!" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150sp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/colorWhite"
+                android:textSize="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="55dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:text="coffe : 15 dhs"
+                android:textColor="@color/colorWhite"
+                android:textSize="10dp" />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="milk : 25 dhs"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="10dp" />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:text="Tea : 10 dhs"
+                android:textColor="@color/colorWhite"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
